@@ -1,0 +1,13 @@
+# host: gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0 | date: 2026-10-24 | cmd: make test
+Running diag_log unit tests...
+
+
+=== 15 tests run, 0 failed ===
+Running diag_watchdog unit tests...
+
+
+=== 13 tests run, 0 failed ===
+Running diag (UDS) unit tests...
+
+
+=== 15 tests run, 0 failed ===

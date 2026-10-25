@@ -1,0 +1,15 @@
+=== System Health Platform demo ===
+
+After 5 healthy cycles: watchdog state = ACTIVE
+
+Tester -> ECU (RDBI request)  [22 12 34]
+ECU -> Tester (RDBI response) [62 12 34 08 55]
+
+Tester -> ECU (RoutineControl start request)  [31 01 02 03]
+ECU -> Tester (RoutineControl start response) [71 01 02 03]
+
+Simulating sensor task hang (no more heartbeats)...
+After hang: watchdog state = FAULT, miss_count = 3
+
+Tester -> ECU (RDBI, unknown DID) [22 99 99]
+ECU -> Tester (negative response)  [7F 22 31]
